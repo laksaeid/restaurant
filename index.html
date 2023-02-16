@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>macdonald iran</title>
+  </head>
+  <body class="bg-danger d-flex">
+    <main class="container mt-5 gap-4 rounded-2 ">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-sm-11 col-lg-8 col-xl-9">
+            <section class="">
+          <header
+            class="border-bottom bg-light border-opacity-25 rounded-top py-4 "
+          >
+            <h1 class="text-center fs-2">رستوران مک دونالد شعبه تهران</h1>
+          </header>
+          <div
+            class="container foods bg-light overflow-y-scroll overflow-x-hidden rounded-bottom-2 p-0 "
+          >
+            <div class="our-foods row g-4 justify-content-center m-0 pt-3">
+              
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-sm-11 col-lg-4 col-xl-3">
+        <aside class=" bg-light p-4 rounded-2">
+          <div class="calcs d-flex justify-content-between">
+            <p>جمع کل سفارشات :</p>
+            <p class=""><span id="total"> 0 </span> <span class="ts">تومان</span></p>
+          </div>
+          <div class="calcs d-flex justify-content-between">
+            <p>حق سرویس و کارمزد :</p>
+            <p><span id="tax"> 0 </span> <span class="ts">تومان</span></p>
+          </div>
+          <div class="calcs d-flex justify-content-between">
+            <p>تخفیف :</p>
+            <p><span id="takhfif"> 0 </span> <span class="ts">درصد</span></p>
+          </div>
+          <div class="code">
+            <div class="input-group mb-3">
+              <input
+                id="takhfifCode"
+                type="text"
+                class="form-control border-0 rounded-0"
+                placeholder="کد تخفیف"
+              />
+              <button id="checkTakhfif" class="code-btn bg-danger">
+                <ion-icon class="tick" name="checkmark-outline"></ion-icon>
+              </button>
+            </div>
+            <div
+              class="bg-warning mt-5 d-flex justify-content-between p-2 position-relative"
+            >
+              <p class="m-0">مبلغ قابل پرداخت :</p>
+              <p class="m-0">
+                <span id="finalPrice" class="calc">0</span>
+                <span class="ts">تومان</span>
+              </p>
+            </div>
+            <button id="submit" class="btn btn-danger w-100 mt-3 py-3">
+              ثبت سفارش
+            </button>
+          </div>
+        </aside>
+      </div>
+      </div>
+    </main>
+
+    <div class="overlay hidden"></div>
+    <div class=" c-modal hidden bg-light rounded-4">
+      <div class="b-modal p-5 d-flex flex-column align-items-center">
+        <p class="text-center fs-4">سفارش شما با موفقیت ثبت شد.</p>
+        <button id="close-modal" class="fs-4 btn w-50 btn-danger">باشه</button>
+      </div>
+    </div>
+    <!-- modallllll -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
